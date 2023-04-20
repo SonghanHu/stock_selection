@@ -27,5 +27,6 @@ class stock_selection:
             pass
 
         indicator = sorted(semi.items(), key = lambda item: -item[1])
-        self.long = [i[0] for i in indicator[:20]]
-        self.short = [i[0] for i in indicator[-20:]]
+        self.short = [i[0] for i in indicator[:20]]
+        self.long = [i[0] for i in indicator[-20:]]
+        
